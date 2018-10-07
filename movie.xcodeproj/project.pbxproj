@@ -27,6 +27,7 @@
 		9D516AD8216A5AAB006C5FDE /* SingupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D516AD7216A5AAB006C5FDE /* SingupViewController.swift */; };
 		9D516ADA216A5D69006C5FDE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D516AD9216A5D69006C5FDE /* LoginViewController.swift */; };
 		9D516ADC216A642C006C5FDE /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D516ADB216A642B006C5FDE /* PostViewController.swift */; };
+		9D516ADE216A7E43006C5FDE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D516ADD216A7E43006C5FDE /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		9D516AD7216A5AAB006C5FDE /* SingupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingupViewController.swift; sourceTree = "<group>"; };
 		9D516AD9216A5D69006C5FDE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9D516ADB216A642B006C5FDE /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		9D516ADD216A7E43006C5FDE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		A446F219432648A172747377 /* Pods_movie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_movie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B26879D7B687DD38CD1814 /* Pods-movie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movie.release.xcconfig"; path = "Pods/Target Support Files/Pods-movie/Pods-movie.release.xcconfig"; sourceTree = "<group>"; };
 		CCAFA43F24E1117B50A4689E /* Pods-movie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-movie/Pods-movie.debug.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				9D516ADB216A642B006C5FDE /* PostViewController.swift */,
 				9D516AD7216A5AAB006C5FDE /* SingupViewController.swift */,
 				9D516AD9216A5D69006C5FDE /* LoginViewController.swift */,
+				9D516ADD216A7E43006C5FDE /* Post.swift */,
 			);
 			path = movie;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 			files = (
 				9D516A1521649B66006C5FDE /* ViewController.swift in Sources */,
 				9D516AD8216A5AAB006C5FDE /* SingupViewController.swift in Sources */,
+				9D516ADE216A7E43006C5FDE /* Post.swift in Sources */,
 				9D516ADA216A5D69006C5FDE /* LoginViewController.swift in Sources */,
 				9D516A1321649B66006C5FDE /* AppDelegate.swift in Sources */,
 				9D516ADC216A642C006C5FDE /* PostViewController.swift in Sources */,

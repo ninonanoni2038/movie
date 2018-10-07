@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,7 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Firebaseの初期設定
         FirebaseApp.configure()
+        
+        // あとからRealm Objectの構造を変えた場合に使用する可能性があるもの
+        let defaultConfig = Realm.Configuration.init(schemaVersion: 0, migrationBlock: nil)
+        Realm.Configuration.defaultConfiguration = defaultConfig
+
         return true
     }
 

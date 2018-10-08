@@ -70,6 +70,14 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             // 途中で処理を終了したいときはその場でreturn
             return
         }
+        
+        
+        //Returnキーを押すと、キーボードを隠す
+        func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            textField.resignFirstResponder()
+            return true
+        }
+        
         // Realmに保存
         let post = Post.create()
         post.name = "自分"
@@ -129,41 +137,11 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
                 ])
             dismiss(animated: true, completion: nil)
         }
+        
+        
     }
     
-//    @IBAction func touchUpInsideCancelButton(_ sender: Any) {
-//
-//        // 編集されていた場合（UXの工場のため）
-//        if textfield.text != "" || cameraImageView.image != nil {
-//
-//            // アラートを出す
-//            let alertController = UIAlertController(title: "変更内容の破棄", message: "変更内容を破棄しますか?", preferredStyle: .alert)
-//            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak self] _ in
-//
-//                // 循環参照というものを防ぐためなるべく行う [weak self]とセットの処理
-//                // （メンバーにはやらせなくてもいい）
-//                guard let self = self else { return }
-//
-//                // この中身はPostViewControllerの外側なので必ずselfが必要
-//                self.dismiss(animated: true, completion: nil)
-//            }))
-//            alertController.addAction(UIAlertAction(title: "キャンセル", style: .cancel, handler: nil))
-//            present(alertController, animated: true, completion: nil)
-//        } else {
-//
-//            dismiss(animated: true, completion: nil)
-//        }
-//    }
     
-    //Returnキーを押すと、キーボードを隠す
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-
+    
     
 }
-
-
-
-

@@ -167,10 +167,10 @@
 				9D516A1B21649B69006C5FDE /* LaunchScreen.storyboard */,
 				9D516A1E21649B69006C5FDE /* Info.plist */,
 				9D516AD5216A5922006C5FDE /* GoogleService-Info.plist */,
+				9D516ADD216A7E43006C5FDE /* Post.swift */,
 				9D516ADB216A642B006C5FDE /* PostViewController.swift */,
 				9D516AD7216A5AAB006C5FDE /* SingupViewController.swift */,
 				9D516AD9216A5D69006C5FDE /* LoginViewController.swift */,
-				9D516ADD216A7E43006C5FDE /* Post.swift */,
 			);
 			path = movie;
 			sourceTree = "<group>";

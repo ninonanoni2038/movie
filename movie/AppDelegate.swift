@@ -22,10 +22,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Firebaseの初期設定
         FirebaseApp.configure()
         
-        // あとからRealm Objectの構造を変えた場合に使用する可能性があるもの
-        let defaultConfig = Realm.Configuration.init(schemaVersion: 0, migrationBlock: nil)
-        Realm.Configuration.defaultConfiguration = defaultConfig
-
         return true
     }
 

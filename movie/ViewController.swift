@@ -12,6 +12,8 @@ import Firebase
 
 class ViewController: PinterestVC {
     
+    
+    
     var posts = [PostData]()
     
     override func viewDidAppear(_ animated: Bool) {
@@ -64,24 +66,36 @@ class ViewController: PinterestVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let layout = PinterestLayout()
+        collectionView.collectionViewLayout = layout
+
+        layout.delegate = self
+        layout.cellPadding = 5
+        layout.numberOfColumns = 2
+        
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
         
-        let text = "Some text. Some text. Some text. Some text."
-        
-        items = [
-            PinterestItem(image: UIImage(named: "apple1 2.jpeg")!, text: text),
-            PinterestItem(image: UIImage(named: "apple2 2.jpeg")!, text: text),
-            PinterestItem(image: UIImage(named: "apple3 2.jpeg")!, text: text),
-            PinterestItem(image: UIImage(named: "apple4 2.jpeg")!, text: text),
-            PinterestItem(image: UIImage(named: "apple5 2.jpeg")!, text: text),
-            PinterestItem(image: UIImage(named: "apple1 2.jpeg")!, text: text),
-            PinterestItem(image: UIImage(named: "apple2 2.jpeg")!, text: text),
-            PinterestItem(image: UIImage(named: "apple3 2.jpeg")!, text: text),
-            PinterestItem(image: UIImage(named: "apple4 2.jpeg")!, text: text),
-            PinterestItem(image: UIImage(named: "apple5 2.jpeg")!, text: text)
-        ]
+//        let text = "Some text. Some text. Some text. Some text."
+//
+//        items = [
+//            PinterestItem(image: UIImage(named: "apple1 2.jpeg")!, text: text),
+//            PinterestItem(image: UIImage(named: "apple2 2.jpeg")!, text: text),
+//            PinterestItem(image: UIImage(named: "apple3 2.jpeg")!, text: text),
+//            PinterestItem(image: UIImage(named: "apple4 2.jpeg")!, text: text),
+//            PinterestItem(image: UIImage(named: "apple5 2.jpeg")!, text: text),
+//            PinterestItem(image: UIImage(named: "apple1 2.jpeg")!, text: text),
+//            PinterestItem(image: UIImage(named: "apple2 2.jpeg")!, text: text),
+//            PinterestItem(image: UIImage(named: "apple3 2.jpeg")!, text: text),
+//            PinterestItem(image: UIImage(named: "apple4 2.jpeg")!, text: text),
+//            PinterestItem(image: UIImage(named: "apple5 2.jpeg")!, text: text)
+//        ]
     }
 
+    
+    
 
 }
 

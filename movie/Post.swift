@@ -1,14 +1,17 @@
 //
 //  Post.swift
-//  movie
+//  RealmFirebaseSample
 //
-//  Created by 二宮啓 on 2018/10/08.
-//  Copyright © 2018年 SatoshiNinomiya. All rights reserved.
+//  Created by 藤井陽介 on 2018/10/06.
+//  Copyright © 2018 touyou. All rights reserved.
 //
 
 import Foundation
 import RealmSwift
 
+/// Realm用にクラスを１つつくる
+/// はるふさん（OB）のQiita記事を参考にすると結構使いやすい
+/// https://qiita.com/_ha1f/items/593ca4f9c97ae697fc75
 class Post: Object {
     /// PrimaryKey用 ... 投稿一つ一つを区別するために用いる値
     @objc dynamic var id = 0
@@ -33,6 +36,23 @@ class Post: Object {
         }
     }
     
+    /// PrimaryKey
+    override static func primaryKey() -> String? {
+        return "id"
+    }
+    
+    // MARK: 便利メソッド集
+    // 使っても使わなくてもよい
+    
+    /// 新しい投稿を作る
+    static func create() -> Post {
+        // インスタンス化
+        let post = Post()
+        // lastId()を使ってidを設定
+        post.id = lastId()
+        return post
+    }
+    
     /// 最後のIDを取ってくる
     static func lastId() -> Int {
         let realm = try! Realm()
@@ -44,13 +64,13 @@ class Post: Object {
         }
     }
     
-    /// 新しい投稿を作る
-    static func create() -> Post {
-        // インスタンス化
-        let post = Post()
-        // lastId()を使ってidを設定
-        post.id = lastId()
-        return post
+    /// すべての投稿を取ってくる
+    static func loadAll() -> [Post] {
+        let realm = try! Realm()
+        // 投稿をidでソートして取得する
+        let posts = realm.objects(Post.self).sorted(byKeyPath: "id", ascending: false)
+        // 簡単のため配列に変換して返している（場合による）
+        return posts.map { $0 }
     }
     
     /// 自分自身を保存する
@@ -61,9 +81,12 @@ class Post: Object {
         }
     }
     
-    /// PrimaryKey
-    override static func primaryKey() -> String? {
-        return "id"
+    /// 更新の場合
+    func update(_ method: () -> Void) {
+        let realm = try! Realm()
+        try! realm.write {
+            method()
+        }
     }
 }
 

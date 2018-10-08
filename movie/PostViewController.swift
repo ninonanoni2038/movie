@@ -142,6 +142,10 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
     
-    
+    //Returnキーを押すと、キーボードを隠す
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
     
 }

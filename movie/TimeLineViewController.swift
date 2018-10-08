@@ -69,12 +69,7 @@ class TimeLineViewController: UIViewController, UICollectionViewDataSource, UICo
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
-    // サムネイル画像の名前
-    let photos = ["nagi", "toko","saya","yumiko","yuyu",
-                  "yuka","miki","mai","kurumi","katakuriko"]
-    
-    
+        
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         
@@ -88,13 +83,13 @@ class TimeLineViewController: UIViewController, UICollectionViewDataSource, UICo
         
         // 画像配列の番号で指定された要素の名前の画像をUIImageとする
         //let cellImage = UIImage(named: photos[indexPath.row])
-        let targetURL = posts[indexPath.row].imagePath
-        
         
         // UIImageをUIImageViewのimageとして設定
         //imageView.image = cellImageの代わりが下
         
         imageView.af_setImage(withURL:posts[indexPath.row].imagePath!)
+        imageView.layer.borderColor = UIColor.white.cgColor
+        imageView.layer.borderWidth = 1
         
         // Tag番号を使ってLabelのインスタンス生成
         let label = testCell.contentView.viewWithTag(2) as! UILabel
@@ -116,13 +111,9 @@ class TimeLineViewController: UIViewController, UICollectionViewDataSource, UICo
         return posts.count;
     }
     
-    @IBAction func print(){
-        Swift.print(posts)
-        Swift.print(posts.count)
-       // print(movie.PostData(text))
-      //  [movie.PostData(text: "test15:22", name: "自分", imagePath: nil, dateString: "10/8/18, 3:22 PM", userId: "v5hbUkkvcORlVbP9Lwzi7Yp7XuH2")]
-        
-        //print(posts.text)
-    }
+//    @IBAction func print(){
+//        Swift.print(posts)
+//        Swift.print(posts.count)
+//    }
 }
 

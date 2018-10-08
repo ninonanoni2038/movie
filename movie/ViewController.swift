@@ -72,16 +72,16 @@ class ViewController: PinterestVC {
         let text = "Some text. Some text. Some text. Some text."
         
         items = [
-            PinterestItem(image: UIImage(named: "apple1 2.jpeg")!, text: text),
-            PinterestItem(image: UIImage(named: "apple2 2.jpeg")!, text: text),
-            PinterestItem(image: UIImage(named: "apple3 2.jpeg")!, text: text),
-            PinterestItem(image: UIImage(named: "apple4 2.jpeg")!, text: text),
-            PinterestItem(image: UIImage(named: "apple5 2.jpeg")!, text: text),
-            PinterestItem(image: UIImage(named: "apple1 2.jpeg")!, text: text),
-            PinterestItem(image: UIImage(named: "apple2 2.jpeg")!, text: text),
-            PinterestItem(image: UIImage(named: "apple3 2.jpeg")!, text: text),
-            PinterestItem(image: UIImage(named: "apple4 2.jpeg")!, text: text),
-            PinterestItem(image: UIImage(named: "apple5 2.jpeg")!, text: text)
+//            PinterestItem(image: UIImage(named: "apple1 2.jpeg")!, text: text),
+//            PinterestItem(image: UIImage(named: "apple2 2.jpeg")!, text: text),
+//            PinterestItem(image: UIImage(named: "apple3 2.jpeg")!, text: text),
+//            PinterestItem(image: UIImage(named: "apple4 2.jpeg")!, text: text),
+//            PinterestItem(image: UIImage(named: "apple5 2.jpeg")!, text: text),
+//            PinterestItem(image: UIImage(named: "apple1 2.jpeg")!, text: text),
+//            PinterestItem(image: UIImage(named: "apple2 2.jpeg")!, text: text),
+//            PinterestItem(image: UIImage(named: "apple3 2.jpeg")!, text: text),
+//            PinterestItem(image: UIImage(named: "apple4 2.jpeg")!, text: text),
+//            PinterestItem(image: UIImage(named: "apple5 2.jpeg")!, text: text)
         ]
 
     }

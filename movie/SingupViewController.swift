@@ -22,7 +22,14 @@ class SingupViewController: UIViewController, UITextFieldDelegate{
         passwordTextField.delegate = self //デリゲートをセット
         passwordTextField.isSecureTextEntry = true // 文字を非表示に
         
+        emailTextField.placeholder = "E-mail address"
+        passwordTextField.placeholder = "Password"
+        
         //self.layoutFacebookButton()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
 //    override func viewWillAppear(_ animated: Bool) {
@@ -85,7 +92,8 @@ class SingupViewController: UIViewController, UITextFieldDelegate{
                         self.present(alertController, animated: true, completion: nil)
                     } else {
                         
-                        self.dismiss(animated: true, completion: nil)
+                        self.performSegue(withIdentifier: "toLogin", sender: self)
+                       // self.dismiss(animated: true, completion: nil)
                     }
                 })
             }

@@ -25,6 +25,7 @@ public struct PinterestItem {
  */
 open class PinterestVC: UICollectionViewController, PinterestLayoutDelegate {
     
+    
     private var _items: [PinterestItem]?
     open var items: [PinterestItem] {
         get {
@@ -85,6 +86,7 @@ open class PinterestVC: UICollectionViewController, PinterestLayoutDelegate {
     public func collectionView(collectionView: UICollectionView,
                         heightForImageAtIndexPath indexPath: IndexPath,
                         withWidth: CGFloat) -> CGFloat {
+        //ここを変えたい↓
         let image = items[indexPath.item].image
         
         return image.height(forWidth: withWidth)
@@ -93,6 +95,7 @@ open class PinterestVC: UICollectionViewController, PinterestLayoutDelegate {
     public func collectionView(collectionView: UICollectionView,
                         heightForAnnotationAtIndexPath indexPath: IndexPath,
                         withWidth: CGFloat) -> CGFloat {
+        //ここを変えたい↓
         let text = items[indexPath.item].text
         let font = UIFont.defaultFont
         

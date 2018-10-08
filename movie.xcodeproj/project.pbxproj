@@ -29,6 +29,14 @@
 		9D516ADE216A7E43006C5FDE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D516ADD216A7E43006C5FDE /* Post.swift */; };
 		9D516AE2216B0606006C5FDE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D516AE1216B0606006C5FDE /* GoogleService-Info.plist */; };
 		9D516AE6216B269C006C5FDE /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D516AE5216B269C006C5FDE /* TimeLineViewController.swift */; };
+		9D516AE8216BD976006C5FDE /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D516AE7216BD976006C5FDE /* background.png */; };
+		9D516AEA216BDACF006C5FDE /* signuppbuttonimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D516AE9216BDACE006C5FDE /* signuppbuttonimg.png */; };
+		9D516AED216BDB4C006C5FDE /* tologinimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D516AEB216BDB4B006C5FDE /* tologinimg.png */; };
+		9D516AEE216BDB4C006C5FDE /* loginimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D516AEC216BDB4B006C5FDE /* loginimg.png */; };
+		9D516AF0216BDD0D006C5FDE /* postbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D516AEF216BDD0D006C5FDE /* postbackground.png */; };
+		9D516AF3216BDF03006C5FDE /* photoicon-img.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D516AF1216BDF02006C5FDE /* photoicon-img.png */; };
+		9D516AF4216BDF03006C5FDE /* camerabuttonimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D516AF2216BDF02006C5FDE /* camerabuttonimg.png */; };
+		9D516AF6216BDF68006C5FDE /* postbuttonimg.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D516AF5216BDF68006C5FDE /* postbuttonimg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +88,14 @@
 		9D516ADD216A7E43006C5FDE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		9D516AE1216B0606006C5FDE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9D516AE5216B269C006C5FDE /* TimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
+		9D516AE7216BD976006C5FDE /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		9D516AE9216BDACE006C5FDE /* signuppbuttonimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signuppbuttonimg.png; sourceTree = "<group>"; };
+		9D516AEB216BDB4B006C5FDE /* tologinimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tologinimg.png; sourceTree = "<group>"; };
+		9D516AEC216BDB4B006C5FDE /* loginimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginimg.png; sourceTree = "<group>"; };
+		9D516AEF216BDD0D006C5FDE /* postbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = postbackground.png; sourceTree = "<group>"; };
+		9D516AF1216BDF02006C5FDE /* photoicon-img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photoicon-img.png"; sourceTree = "<group>"; };
+		9D516AF2216BDF02006C5FDE /* camerabuttonimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camerabuttonimg.png; sourceTree = "<group>"; };
+		9D516AF5216BDF68006C5FDE /* postbuttonimg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = postbuttonimg.png; sourceTree = "<group>"; };
 		A446F219432648A172747377 /* Pods_movie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_movie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B26879D7B687DD38CD1814 /* Pods-movie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movie.release.xcconfig"; path = "Pods/Target Support Files/Pods-movie/Pods-movie.release.xcconfig"; sourceTree = "<group>"; };
 		CCAFA43F24E1117B50A4689E /* Pods-movie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-movie/Pods-movie.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,7 +177,7 @@
 		9D516A1121649B66006C5FDE /* movie */ = {
 			isa = PBXGroup;
 			children = (
-				9D516A4021649EBE006C5FDE /* image */,
+				9D516A4021649EBE006C5FDE /* images */,
 				9D516A1221649B66006C5FDE /* AppDelegate.swift */,
 				9D516A1421649B66006C5FDE /* ViewController.swift */,
 				9D516A1621649B66006C5FDE /* Main.storyboard */,
@@ -196,9 +212,17 @@
 			path = movieUITests;
 			sourceTree = "<group>";
 		};
-		9D516A4021649EBE006C5FDE /* image */ = {
+		9D516A4021649EBE006C5FDE /* images */ = {
 			isa = PBXGroup;
 			children = (
+				9D516AF5216BDF68006C5FDE /* postbuttonimg.png */,
+				9D516AF2216BDF02006C5FDE /* camerabuttonimg.png */,
+				9D516AF1216BDF02006C5FDE /* photoicon-img.png */,
+				9D516AEF216BDD0D006C5FDE /* postbackground.png */,
+				9D516AEC216BDB4B006C5FDE /* loginimg.png */,
+				9D516AEB216BDB4B006C5FDE /* tologinimg.png */,
+				9D516AE9216BDACE006C5FDE /* signuppbuttonimg.png */,
+				9D516AE7216BD976006C5FDE /* background.png */,
 				9D516A472164A2B2006C5FDE /* homeicon.png */,
 				9D516A492164ABC6006C5FDE /* apple1 2.jpeg */,
 				9D516A4A2164ABC6006C5FDE /* apple2 2.jpeg */,
@@ -206,7 +230,7 @@
 				9D516A4B2164ABC6006C5FDE /* apple4 2.jpeg */,
 				9D516A4D2164ABC6006C5FDE /* apple5 2.jpeg */,
 			);
-			path = image;
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,14 +342,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D516A512164ABC6006C5FDE /* apple3 2.jpeg in Resources */,
+				9D516AF3216BDF03006C5FDE /* photoicon-img.png in Resources */,
 				9D516A1D21649B69006C5FDE /* LaunchScreen.storyboard in Resources */,
+				9D516AEA216BDACF006C5FDE /* signuppbuttonimg.png in Resources */,
 				9D516A522164ABC6006C5FDE /* apple5 2.jpeg in Resources */,
+				9D516AF6216BDF68006C5FDE /* postbuttonimg.png in Resources */,
+				9D516AED216BDB4C006C5FDE /* tologinimg.png in Resources */,
 				9D516A4F2164ABC6006C5FDE /* apple2 2.jpeg in Resources */,
+				9D516AF0216BDD0D006C5FDE /* postbackground.png in Resources */,
 				9D516A502164ABC6006C5FDE /* apple4 2.jpeg in Resources */,
+				9D516AEE216BDB4C006C5FDE /* loginimg.png in Resources */,
+				9D516AF4216BDF03006C5FDE /* camerabuttonimg.png in Resources */,
 				9D516A482164A2B2006C5FDE /* homeicon.png in Resources */,
 				9D516A4E2164ABC6006C5FDE /* apple1 2.jpeg in Resources */,
 				9D516AE2216B0606006C5FDE /* GoogleService-Info.plist in Resources */,
 				9D516A1A21649B69006C5FDE /* Assets.xcassets in Resources */,
+				9D516AE8216BD976006C5FDE /* background.png in Resources */,
 				9D516A1821649B66006C5FDE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

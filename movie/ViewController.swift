@@ -83,6 +83,7 @@ class ViewController: PinterestVC {
             PinterestItem(image: UIImage(named: "apple4 2.jpeg")!, text: text),
             PinterestItem(image: UIImage(named: "apple5 2.jpeg")!, text: text)
         ]
+
     }
 
     

@@ -12,6 +12,7 @@ target 'movie' do
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
   pod 'RealmSwift'
+  pod 'AlamofireImage'
 
   target 'movieTests' do
     inherit! :search_paths

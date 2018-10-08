@@ -65,7 +65,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     //ログイン完了後に、ListViewControllerへの遷移のためのメソッド
     func transitionToView()  {
-        self.performSegue(withIdentifier: "toCVC", sender: self)
+        self.performSegue(withIdentifier: "toVC", sender: self)
     }
 }
 

@@ -121,7 +121,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
                         "date": post.dateString,
                         "imagePath": url?.absoluteString ?? ""
                         ])
-                    self.dismiss(animated: true, completion: nil)
+                   // self.dismiss(animated: true, completion: nil)
                 })
             })
         } else {
@@ -135,7 +135,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
                 "date": post.dateString,
                 "imagePath": ""
                 ])
-            dismiss(animated: true, completion: nil)
+           // dismiss(animated: true, completion: nil)
         }
         
         
